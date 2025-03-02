@@ -3,25 +3,25 @@
 
 # Format the code
 format:
-    cargo fmt
+	cargo fmt
 
 # Lint the code
 lint:
-    cargo clippy --all-targets --all-features -- -D warnings
+	cargo clippy --all-targets --all-features -- -D warnings
 
 # Run tests
 test:
-    cargo test
+	cargo test
 
 # Build the project
 build:
-    cargo build --release
+	cargo build --release
 
 # Run all the above steps
 all: format lint test build
 
 # Clean the project
 clean:
-    cargo clean
+	cargo clean
 
 .PHONY: format lint test build all clean
